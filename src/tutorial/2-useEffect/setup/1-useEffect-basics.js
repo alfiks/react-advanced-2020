@@ -11,7 +11,6 @@ useEffect(()=>{
       document.title = `New Messages(${value})`
   }
 },[value]);
-
 useEffect(()=>{
 console.log('hello world')
 },[])
