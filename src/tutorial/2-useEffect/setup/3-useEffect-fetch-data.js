@@ -2,8 +2,18 @@ import React, { useState, useEffect } from 'react';
 
 const url = 'https://api.github.com/users';
 
+
+
+
 const UseEffectFetchData = () => {
-  return <h2>fetch data</h2>;
+  const [users, setUsers] = useState([]);
+  
+  useEffect(()=>{
+    
+  })
+  return <>
+  <h3> GitHub Users</h3>
+  </>;
 };
 
 export default UseEffectFetchData;
