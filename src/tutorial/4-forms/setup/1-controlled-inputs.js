@@ -6,7 +6,26 @@ import React, { useState } from 'react';
 // value, onChange
 
 const ControlledInputs = () => {
-  return <h1>controlled inputs</h1>;
+const handleSubmit = (e) =>{
+  e.preventDefault();
+  console.log("hello world");
+
+}
+  return <>
+  <article>
+    <form className="form" onSubmit={handleSubmit}>
+      <div className="form-input"> 
+      <label htmlFor="firstName">Name : </label>
+      <input type="text" id="firstName" name="firstName" />
+      </div>
+           <div className="form-input"> 
+      <label htmlFor="email">Email : </label>
+      <input type="text" id="email" name="email" />
+      </div>
+      <button className="btn" type="submit" onClick={handleSubmit}>add person</button>
+    </form>
+  </article>
+  </>
 };
 
 export default ControlledInputs;
